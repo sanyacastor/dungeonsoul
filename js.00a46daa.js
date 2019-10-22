@@ -134,7 +134,7 @@ function init() {
     iconColor: '#735184',
     iconLayout: 'default#image',
     iconImageHref: 'https://steamuserimages-a.akamaihd.net/ugc/622974311978456788/3640145C1619AF53D649820853547DE89A0DEFE3/',
-    iconImageSize: [55, 55]
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6883118, 37.7633283], {
     iconCaption: 'Трубы'
   }, {
@@ -152,7 +152,7 @@ function init() {
     iconColor: '#735184',
     iconLayout: 'default#image',
     iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_53653.png',
-    iconImageSize: [55, 55]
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6838542, 37.7923428], {
     iconCaption: 'Дорога в сосновом бору'
   }, {
@@ -170,7 +170,7 @@ function init() {
     iconColor: '#735184',
     iconLayout: 'default#image',
     iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_99759.png',
-    iconImageSize: [55, 55]
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6862000, 37.7899737], {
     iconCaption: 'Холм у озера'
   }, {
