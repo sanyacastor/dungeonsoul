@@ -130,8 +130,8 @@ function init() {
   myMap.geoObjects.add(new ymaps.Placemark([55.6876577, 37.7580098], {
     iconCaption: 'Старт'
   }, {
-     preset: 'islands#icon',
-    iconColor: '#735184'
+    preset: 'islands#icon',
+    iconColor: '#735184',
     iconLayout: 'default#image',
     iconImageHref: 'https://steamuserimages-a.akamaihd.net/ugc/622974311978456788/3640145C1619AF53D649820853547DE89A0DEFE3/',
     iconImageSize: [55, 55]
@@ -148,9 +148,8 @@ function init() {
   })).add(new ymaps.Placemark([55.6812839, 37.8051892], {
     iconCaption: 'Просека'
   }, {
-     preset: 'islands#icon',
-    iconColor: '#735184'
     preset: 'islands#icon',
+    iconColor: '#735184',
     iconLayout: 'default#image',
     iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_53653.png',
     iconImageSize: [55, 55]
@@ -167,9 +166,8 @@ function init() {
   })).add(new ymaps.Placemark([55.6881066, 37.7944272], {
     iconCaption: 'Между двух мостов'
   }, {
-     preset: 'islands#icon',
-    iconColor: '#735184'
     preset: 'islands#icon',
+    iconColor: '#735184',
     iconLayout: 'default#image',
     iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_99759.png',
     iconImageSize: [55, 55]
