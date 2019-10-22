@@ -130,9 +130,11 @@ function init() {
   myMap.geoObjects.add(new ymaps.Placemark([55.6876577, 37.7580098], {
     iconCaption: 'Старт'
   }, {
-    iconLayout: 'default#image',
-    iconImageHref: 'https://steamuserimages-a.akamaihd.net/ugc/622974311978456788/3640145C1619AF53D649820853547DE89A0DEFE3/',
-    iconImageSize: [55, 55]
+     preset: 'islands#icon',
+    iconColor: '#735184'
+//     iconLayout: 'default#image',
+//     iconImageHref: 'https://steamuserimages-a.akamaihd.net/ugc/622974311978456788/3640145C1619AF53D649820853547DE89A0DEFE3/',
+//     iconImageSize: [55, 55]
   })).add(new ymaps.Placemark([55.6883118, 37.7633283], {
     iconCaption: 'Трубы'
   }, {
@@ -146,11 +148,13 @@ function init() {
   })).add(new ymaps.Placemark([55.6812839, 37.8051892], {
     iconCaption: 'Просека'
   }, {
-    preset: 'islands#icon',
-    iconLayout: 'default#image',
-    iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_53653.png',
+     preset: 'islands#icon',
+    iconColor: '#735184'
+//     preset: 'islands#icon',
+//     iconLayout: 'default#image',
+//     iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_53653.png',
     iconImageSize: [55, 55]
-  })).add(new ymaps.Placemark([55.642063, 37.656123], {
+  })).add(new ymaps.Placemark([55.6838542, 37.7923428], {
     iconCaption: 'Дорога в сосновом бору'
   }, {
     preset: 'islands#icon',
@@ -163,9 +167,11 @@ function init() {
   })).add(new ymaps.Placemark([55.6881066, 37.7944272], {
     iconCaption: 'Между двух мостов'
   }, {
-    preset: 'islands#icon',
-    iconLayout: 'default#image',
-    iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_99759.png',
+     preset: 'islands#icon',
+    iconColor: '#735184'
+//     preset: 'islands#icon',
+//     iconLayout: 'default#image',
+//     iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_99759.png',
     iconImageSize: [55, 55]
   })).add(new ymaps.Placemark([55.6862000, 37.7899737], {
     iconCaption: 'Холм у озера'
