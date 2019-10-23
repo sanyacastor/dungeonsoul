@@ -133,51 +133,66 @@ function init() {
     preset: 'islands#icon',
     iconColor: '#735184',
     iconLayout: 'default#image',
-    iconImageHref: 'https://steamuserimages-a.akamaihd.net/ugc/622974311978456788/3640145C1619AF53D649820853547DE89A0DEFE3/',
+    iconImageHref: 'img/H_1.png',
     iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6883118, 37.7633283], {
-    iconCaption: 'Трубы'
+    iconCaption: 'Трубы (Водяная мельница)'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_2.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6866717, 37.8167412], {
     iconCaption: 'Дорога за рощей черной ольхи'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_3.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6812839, 37.8051892], {
     iconCaption: 'Просека'
   }, {
     preset: 'islands#icon',
     iconColor: '#735184',
     iconLayout: 'default#image',
-    iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_53653.png',
+    iconImageHref: 'img/H_4.png',
     iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6838542, 37.7923428], {
     iconCaption: 'Дорога в сосновом бору'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_5.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6879391, 37.7964610], {
     iconCaption: 'Пристань'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_6.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6881066, 37.7944272], {
     iconCaption: 'Между двух мостов'
   }, {
     preset: 'islands#icon',
     iconColor: '#735184',
     iconLayout: 'default#image',
-    iconImageHref: 'http://www.might-and-magic.ru/uploads/gallery/album_48/gallery_3_48_99759.png',
+    iconImageHref: 'img/H_7.png',
     iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6862000, 37.7899737], {
     iconCaption: 'Холм у озера'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_11.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6891638, 37.7882802], {
-    iconCaption: 'Крепость'
+    iconCaption: 'Тюрьма'
   }, {
     preset: 'islands#icon',
     iconColor: '#735184'
@@ -185,39 +200,60 @@ function init() {
     iconCaption: 'Львы'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_7.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6920996, 37.7881995], {
     iconCaption: 'Мост в глуши'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_8.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6893995, 37.7852604], {
     iconCaption: 'Кони'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_9.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6952883, 37.7851377], {
     iconCaption: 'Дальний Пруд'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_10.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6919450, 37.7792546], {
-    iconCaption: 'Дерево мудрости'
+    iconCaption: 'Дерево знаний'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_11.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6917376, 37.7734758], {
     iconCaption: 'Водопад'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_14.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6922591, 37.7724351], {
-    iconCaption: 'Апхилл логово драконов'
+    iconCaption: 'Маг'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_12.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6910559, 37.7692838], {
-    iconCaption: 'Поваленное дерево'
+    iconCaption: 'Хижина ведьмы'
   }, {
     preset: 'islands#icon',
     iconColor: '#735184'
@@ -230,14 +266,20 @@ function init() {
     iconCaption: 'Яблоневый сад'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_13.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6912645, 37.7656759], {
     iconCaption: 'Заводь (Трубы 2)'
   }, {
     preset: 'islands#icon',
-    iconColor: '#735184'
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_15.png',
+    iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6931439, 37.7629464], {
-    iconCaption: 'Медвежий угол'
+    iconCaption: 'Бараки'
   }, {
     preset: 'islands#icon',
     iconColor: '#735184'
