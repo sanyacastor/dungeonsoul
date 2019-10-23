@@ -129,7 +129,18 @@ function init() {
   });
   myMap.geoObjects.add(new ymaps.Placemark([55.6876577, 37.7580098], {
     iconCaption: 'Старт'
-  }, {
+  }, 
+    {
+    preset: 'islands#icon',
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_1.png',
+    iconImageSize: [55, 55],
+  })).add(new ymaps.Placemark([55.6876577, 37.7580098], {
+    balloonContentHeader: "Старт",
+    balloonContentBody: "Замок",
+  },
+   {
     preset: 'islands#icon',
     iconColor: '#735184',
     iconLayout: 'default#image',
