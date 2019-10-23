@@ -121,6 +121,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 ymaps.ready(init);
 
 function init() {
+      var location = ymaps.geolocation.get();
+
+// Асинхронная обработка ответа.
+location.then(
+  function(result) {
+    // Добавление местоположения на карту.
+    myMap.geoObjects.add(result.geoObjects)
+  },
+  function(err) {
+    console.log('Ошибка: ' + err)
+  }
+);
+  
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
     zoom: 14
