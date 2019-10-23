@@ -136,7 +136,8 @@ function init() {
     iconImageHref: 'img/H_1.png',
     iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6883118, 37.7633283], {
-    iconCaption: 'Трубы (Водяная мельница)'
+    balloonContentHeader: "Трубы (Водяная мельница)",
+    balloonContentBody: "Взберись на мельницу и смотри против течение реки, прям туда где реки изгибается. Там ты найдешь обелиск.",
   }, {
     preset: 'islands#icon',
     iconColor: '#735184',
@@ -144,7 +145,8 @@ function init() {
     iconImageHref: 'img/H_2.png',
     iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6866717, 37.8167412], {
-    iconCaption: 'Дорога за рощей черной ольхи'
+    balloonContentHeader: "Дорога за рощей черной ольхи. (Покров тьмы)",
+    balloonContentBody: "В самой темной части наших лесов, прямо на границе с землями мертвых под вечным покровом тьмы находится Обелиск. Будь внимателен добрый герой.",
   }, {
     preset: 'islands#icon',
     iconColor: '#735184',
