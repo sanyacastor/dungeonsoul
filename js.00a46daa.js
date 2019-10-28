@@ -278,13 +278,22 @@ location.then(
     iconImageHref: 'img/H_14.png',
     iconImageSize: [55, 55],
   })).add(new ymaps.Placemark([55.6891638, 37.7882802], {
-    balloonContentHeader: "15.Тюрьма",
-      balloonContentBody: "В тюрьме ты найдешь старого гнома, только он знает где обелиск.",
+    balloonContentHeader: "15.Бараки",
+      balloonContentBody: "На западной окраине нашего королевства, находится лагерь войнов. Отыщи рыцаря. Скорее всего он находится рядом с медведем.",
   }, {
     preset: 'islands#icon',
     iconColor: '#735184',
     iconLayout: 'default#image',
     iconImageHref: 'img/H_15.png',
+    iconImageSize: [55, 55],
+  })).add(new ymaps.Placemark([55.6891638, 37.7882802], {
+    balloonContentHeader: "16.Тюрьма",
+      balloonContentBody: "В тюрьме ты найдешь старого гнома, только он знает где обелиск.",
+  }, {
+    preset: 'islands#icon',
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'img/H_16.png',
     iconImageSize: [55, 55],
   }));
 }
