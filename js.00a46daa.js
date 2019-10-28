@@ -133,17 +133,7 @@ location.then(
     console.log('Ошибка: ' + err)
   }
 );
-  
-  navigator.geolocation.getCurrentPosition(updUserPosition, locatError);
-  
-  function updUserPosition(pos) {
-    console.log(pos);
-  };
-    
-   function locatError (err) {
-      console.log(err);
-   };
-  
+
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
     zoom: 14
