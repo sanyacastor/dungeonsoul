@@ -137,6 +137,7 @@ location.then(
   navigator.geolocation.getCurrentPosition(updUserPosition, fucntion(err){console.log(err);});
   
   function updUserPosition(pos) {
+    console.log(pos);
     myMap.geoObjects.add(new ymaps.Placemark([pos.coords.latitude, pos.coords.longitude], {
     balloonContentHeader: "Вы",
     balloonContentBody: "Замок",
