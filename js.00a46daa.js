@@ -134,6 +134,21 @@ location.then(
   }
 );
   
+  navigator.geolocation.getCurrentPosition(updUserPosition, fucntion(err){console.log(err);});
+  
+  function updUserPosition(pos) {
+    myMap.geoObjects.add(new ymaps.Placemark([pos.coords.latitude, pos.coords.longitude], {
+    balloonContentHeader: "Вы",
+    balloonContentBody: "Замок",
+  }, 
+    {
+    preset: 'islands#icon',
+    iconColor: '#735184',
+    iconLayout: 'default#image',
+    iconImageHref: 'http://pngimg.com/uploads/homm/homm_PNG11.png',
+    iconImageSize: [55, 55],
+  }));
+  
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
     zoom: 14
