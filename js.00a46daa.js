@@ -150,7 +150,7 @@ location.then(
     iconImageSize: [55, 55],
   }));
     
-   fucntion locatError (err) {
+   function locatError (err) {
       console.log(err);
    }
   
