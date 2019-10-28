@@ -473,11 +473,6 @@ function hmrAcceptCheck(bundle, id) {
     return hmrAcceptCheck(global.parcelRequire, id);
   });
 }
-  
-(function(){
-    // do some stuff
-    setTimeout(init(), 60000);
-   })();
 
 function hmrAcceptRun(bundle, id) {
   var cached = bundle.cache[id];
