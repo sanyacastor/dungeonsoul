@@ -134,6 +134,11 @@ location.then(
   }
 );
   
+  (function(){
+    // do some stuff
+    setTimeout(init(), 60000);
+   })();
+  
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
     zoom: 14
