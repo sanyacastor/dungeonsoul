@@ -134,7 +134,7 @@ location.then(
   }
 );
   
-  navigator.geolocation.getCurrentPosition(updUserPosition, fucntion(err){console.log(err);});
+  navigator.geolocation.getCurrentPosition(updUserPosition, locatError);
   
   function updUserPosition(pos) {
     console.log(pos);
@@ -149,6 +149,10 @@ location.then(
     iconImageHref: 'http://pngimg.com/uploads/homm/homm_PNG11.png',
     iconImageSize: [55, 55],
   }));
+    
+   fucntion locatError (err) {
+      console.log(err);
+   }
   
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
