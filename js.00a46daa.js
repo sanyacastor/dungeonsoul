@@ -138,21 +138,11 @@ location.then(
   
   function updUserPosition(pos) {
     console.log(pos);
-    myMap.geoObjects.add(new ymaps.Placemark([pos.coords.latitude, pos.coords.longitude], {
-    balloonContentHeader: "Вы",
-    balloonContentBody: "Замок",
-  }, 
-    {
-    preset: 'islands#icon',
-    iconColor: '#735184',
-    iconLayout: 'default#image',
-    iconImageHref: 'http://pngimg.com/uploads/homm/homm_PNG11.png',
-    iconImageSize: [55, 55],
-  }));
+  };
     
    function locatError (err) {
       console.log(err);
-   }
+   };
   
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
