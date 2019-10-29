@@ -2,42 +2,29 @@ ymaps.ready(init);
 
 function init() {
 
+  var user = new ymaps.Placemark([55.6891, 37.7882], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/user.png',
+    iconImageSize: [40, 40],
+    iconImageOffset: [-3, -42]
+  });
+
   navigator.geolocation.getCurrentPosition(function(position) {
     drawUserPosition(position.coords.latitude, position.coords.longitude);
   });
 
   navigator.geolocation.watchPosition(function(position) {
-    drawUserPosition(position.coords.latitude, position.coords.longitude);
+    console.log('Координаты юзера:'+position.coords.latitude+' '+position.coords.longitude);
+    let cord = [position.coords.latitude, position.coords.longitude];
+    user.geometry.setCoordinates(cord);
   });
 
 
   function drawUserPosition(lat, lon) {
-    console.log('Координаты юзера:'+lat+' '+lon);
-        if (user) {
-          myMap.geoObjects.remove(user);
-        }
-       var user = new ymaps.Placemark([lat, lon], {}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/user.png',
-        iconImageSize: [40, 40]
-    });
-
-    myMap.geoObjects.add(user); 
+    let cord = [lat, lon]
+    user.geometry.setCoordinates(cord);
+    myMap.geoObjects.add(user);
   }
-
-
-
-
-// // Асинхронная обработка ответа.
-// location.then(
-//   function(result) {
-//     // Добавление местоположения на карту.
-//     myMap.geoObjects.add(result.geoObjects)
-//   },
-//   function(err) {
-//     console.log('Ошибка: ' + err)
-//   }
-// );
 
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
@@ -202,3 +189,4 @@ function init() {
     iconImageSize: [55, 55],
   }));
 }
+
