@@ -11,24 +11,35 @@ function init() {
   });
 
 
-   function drawUserPosition(lat, lon) {
+  function drawUserPosition(lat, lon) {
     console.log('Координаты юзера:'+lat+' '+lon);
-    if (user) {
-      myMap.geoObjects.remove(user);
-    }
-    var user = new ymaps.Placemark([lat, lon], {}, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/user.png',
-      iconImageSize: [40, 40],
-      iconImageOffset: [-3, -42]
-  });
+        if (user) {
+          myMap.geoObjects.remove(user);
+        }
+      let user = new ymaps.Placemark([lat, lon], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/user.png',
+        iconImageSize: [40, 40],
+        iconImageOffset: [-3, -42]
+    });
 
     myMap.geoObjects.add(user); 
   }
 
-    myMap.geoObjects.add(user); 
-  }
-  
+
+
+
+// // Асинхронная обработка ответа.
+// location.then(
+//   function(result) {
+//     // Добавление местоположения на карту.
+//     myMap.geoObjects.add(result.geoObjects)
+//   },
+//   function(err) {
+//     console.log('Ошибка: ' + err)
+//   }
+// );
+
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
     zoom: 14
@@ -192,4 +203,3 @@ function init() {
     iconImageSize: [55, 55],
   }));
 }
-
