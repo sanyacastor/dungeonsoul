@@ -16,11 +16,10 @@ function init() {
         if (user) {
           myMap.geoObjects.remove(user);
         }
-      let user = new ymaps.Placemark([lat, lon], {}, {
+       var user = new ymaps.Placemark([lat, lon], {}, {
         iconLayout: 'default#image',
         iconImageHref: 'img/user.png',
-        iconImageSize: [40, 40],
-        iconImageOffset: [-3, -42]
+        iconImageSize: [40, 40]
     });
 
     myMap.geoObjects.add(user); 
