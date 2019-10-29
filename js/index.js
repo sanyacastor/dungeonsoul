@@ -11,8 +11,11 @@ function init() {
   });
 
 
-  function drawUserPosition(lat, lon) {
-    console.log(lat+' '+lon);
+   function drawUserPosition(lat, lon) {
+    console.log('Координаты юзера:'+lat+' '+lon);
+    if (user) {
+      myMap.geoObjects.remove(user);
+    }
     var user = new ymaps.Placemark([lat, lon], {}, {
       iconLayout: 'default#image',
       iconImageHref: 'img/user.png',
@@ -23,20 +26,9 @@ function init() {
     myMap.geoObjects.add(user); 
   }
 
-
-
-
-// // Асинхронная обработка ответа.
-// location.then(
-//   function(result) {
-//     // Добавление местоположения на карту.
-//     myMap.geoObjects.add(result.geoObjects)
-//   },
-//   function(err) {
-//     console.log('Ошибка: ' + err)
-//   }
-// );
-
+    myMap.geoObjects.add(user); 
+  }
+  
   var myMap = new ymaps.Map("map", {
     center: [55.6891, 37.7882],
     zoom: 14
