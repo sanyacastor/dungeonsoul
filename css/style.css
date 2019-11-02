@@ -18,7 +18,7 @@ body {
   background-image: url("../img/PB_logo_opt.png");
   background-size: cover;
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-150px);
   z-index: 999;
